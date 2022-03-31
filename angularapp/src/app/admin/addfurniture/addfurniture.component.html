@@ -1,0 +1,20 @@
+<h1>Add furniture Admin</h1>
+
+<form>
+  <label for="name">Name</label>
+  <input type="text" class="form-control" id="name" placeholder="Furniture Name" [(ngModel)]="furniture.name" name="name">
+
+  <label for="company>company</label>
+  <input type="text" class="form-control" id="company" placeholder="company" name="company" [(ngModel)]="furniture.company">
+
+  <label for="author">Price</label>
+  <input type="text" class="form-control" id="price" placeholder="price" name="price" [(ngModel)]="furniture.price">
+
+
+    <br>
+    <input type="file" (change)="onFileChanged($event)">
+    <img [src]="imgURL" height="200" width="200" *ngIf="imgURL">
+
+  <br>
+  <button type="button" class="btn btn-success" (click)="saveFurniture()">Save Furniture/button>
+</form>

@@ -1,0 +1,29 @@
+<h1>furniture Admin</h1>
+<a class="btn btn-primary mb-3" (click)="addFurniture()">Add New Furniture</a>
+<div class="container row">
+  <div class="col-md-21">
+    <table class="table">
+      <caption>furniture store 2022</caption>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>furniture Name</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let f of dashboard">
+          <td>{{f.id}}</td>
+          <td>{{f.name}}</td>
+          <td>
+            <button type="button" class="btn btn-primary" (click)="setFurniture(f.id)">Show Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-21">
+    <app-addfurniture *ngIf="action === 'add'" [book]="selectedFurniture"></app-addfurniture>
+    
+  </div>
+</div>
