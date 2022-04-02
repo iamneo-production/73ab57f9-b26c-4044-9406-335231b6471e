@@ -1,0 +1,25 @@
+<h1>Furniture Details</h1>
+
+    <table>
+        <tr>
+            <td>furniture Id</td>
+            <td>{{furniture.id}}</td>
+        </tr>
+        <tr>
+            <td>furniture Name</td>
+            <td>{{furniture.name}}</td>
+        </tr>
+        <tr>
+            <td>furniture company</td>
+            <td>{{furniture.company}}</td>
+        </tr>
+        <tr>
+            <td>furniture price</td>
+            <td>{{furniture.price}}</td>
+        </tr>
+    </table>
+    <br>
+    <img src="{{furniture.retrievedImage}}" height="200" width="200">
+    <br><br>
+
+    <a class="btn btn-small btn-danger" (click)="deleteFurniture()">delete</a>

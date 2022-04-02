@@ -3,5 +3,6 @@ export class Furniture {
     name: string;
     company: string;
     price: number;
-    picByte: string;    
+    picByte: string; 
+    retrievedImage: string;   
     }
