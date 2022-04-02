@@ -23,7 +23,7 @@
     </table>
   </div>
   <div class="col-md-21">
-    <app-addfurniture *ngIf="action === 'add'" [book]="selectedFurniture"></app-addfurniture>
+    <app-addfurniture *ngIf="action === 'add'" [furniture]="selectedFurniture" (furnitureAddedEvent)="refreshData()"></app-addfurniture>
     
   </div>
 </div>
