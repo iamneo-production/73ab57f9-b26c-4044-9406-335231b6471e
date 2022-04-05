@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './navbar/home.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { MenuComponent } from './menu/menu.component';
-import { AddfurnitureComponent } from './admin/addfurniture/addfurniture.component';
+import { AddfurnitureComponent } from './admin/addproduct/addfurniture.component';
 import { OrderlistComponent } from './admin/orderlist/orderlist.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OrderlistComponent } from './admin/orderlist/orderlist.component';
     DashboardComponent,
     MenuComponent,
     AddfurnitureComponent,
-    OrderlistComponent
+    OrderlistComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
